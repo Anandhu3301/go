@@ -18,13 +18,7 @@ func main() {
 
 	// fmt.Println("Unsigned value of ", a, "is", utils.Unsigned(z))
 
-	// dayofweek := [...]string{
-	// 	"sun","mon",
-	// }
-	// dayofweek[1] = "hyt"
-	// slice := dayofweek[:]
-	// slice = append(slice, "spoi")
-	// fmt.Println(slice)
+	
 
 	var s *utils.Stack = new(utils.Stack)
 	var maxsize int
