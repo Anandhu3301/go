@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go_basic/utils"
+	"github.com/Anandhu3301/go_basic/utils"
 )
 
 func main() {
