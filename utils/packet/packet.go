@@ -2,7 +2,7 @@ package packet
 
 import "fmt"
 
-func packets(val int) {
+func Packets(val int) {
 	if val < 50 {
 		fmt.Println("Its low")
 	} else {
