@@ -25,7 +25,7 @@ func (list *LinkedList) CreateNode(new_data int) {
 	}
 }
 
-func (list *LinkedList) AddNode(afterval int, new_val int) {
+func (list *LinkedList) AddNodeIndex(afterval int, new_val int) {
 	current := list.Head
 	for current != nil && current.Value != afterval {
 		current = current.Next
@@ -40,6 +40,18 @@ func (list *LinkedList) AddNode(afterval int, new_val int) {
 	new_node.Next = current.Next
 	current.Next = new_node
 
+}
+
+func (list *LinkedList) AddNode(val int) {
+	current := list.Head
+	if current == nil {
+		list.Head = &Node{Value: val}
+	}
+	for current.Next != nil {
+		current = current.Next
+	}
+	new_node := &Node{Value: val}
+	current.Next = new_node
 }
 
 func (list *LinkedList) Delete(value int) {
@@ -67,3 +79,50 @@ func (list *LinkedList) Delete(value int) {
 	previous.Next = current.Next
 
 }
+
+
+
+
+
+// package utils
+
+// import "fmt"
+
+// type Node struct {
+// 	Value int
+// 	Next *Node
+// }
+
+// type LinkedList struct {
+// 	Head *Node
+// }
+
+// func (list *LinkedList) Initialise(val int) {
+// 	new_node := &Node{Value: val}
+
+// 	if list.Head == nil {
+// 		list.Head = new_node
+// 	} else {
+// 		current := list.Head
+// 		for current.Next != nil {
+// 			current = current.Next
+// 		}
+// 		current.Next = new_node
+// 	}
+// }
+
+// func (list *LinkedList) AddAtIndex(searchval int , value int) {
+// 	current := list.Head
+// 	for current != nil && current.Value != searchval {
+// 		current = current.Next
+// 	}
+// 	if current.Next == nil {
+// 		fmt.Println("The entered search value cannot be found")
+// 		return
+// 	}
+// 	new_node := &Node{Value: value}
+
+// 	new_node.Next = current.Next
+// 	current.Next = new_node
+// }
+
