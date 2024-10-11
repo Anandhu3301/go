@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/Anandhu3301/go1/utils"
+	// "github.com/Anandhu3301/go1/utils"
+	"github.com/Anandhu3301/go1/utils/packet"
+
 )
 
 func main() {
@@ -20,20 +22,23 @@ func main() {
 
 	
 
-	var s *utils.Stack = new(utils.Stack)
-	var maxsize int
-	fmt.Println("What should be the length of stack")
-	fmt.Scanln(&maxsize)         
-	s.Initialize(maxsize)
+	// var s *utils.Stack = new(utils.Stack)
+	// var maxsize int
+	// fmt.Println("What should be the length of stack")
+	// fmt.Scanln(&maxsize)         
+	// s.Initialize(maxsize)
 
-	s.Push(4)
-	s.Push(3)
-	s.Push(8)
+	// s.Push(4)
+	// s.Push(3)
+	// s.Push(8)
 
-	for !s.IsEmpty() {
-		fmt.Println("Top element",s.Peek())
-		fmt.Println("Popped element",s.Pop())
-	}
+	// for !s.IsEmpty() {
+	// 	fmt.Println("Top element",s.Peek())
+	// 	fmt.Println("Popped element",s.Pop())
+	// }
+
+	a := packet.Packet12(23)
+	fmt.Println(a)
 
 
 
