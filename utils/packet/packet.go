@@ -1,12 +1,12 @@
 package packet
 
-import "fmt"
 
-func Packet12(val int) {
+
+func Packet12(val int) string {
 	if val < 50 {
-		fmt.Println("Its low")
+		return "Its low"
 	} else {
-		fmt.Println("Its high")
+		return "Its high"
 
 	}
 }
