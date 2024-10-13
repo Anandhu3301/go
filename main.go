@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
 	// "github.com/Anandhu3301/go1/utils"
-	"github.com/Anandhu3301/go1/utils/packet"
+	// "github.com/Anandhu3301/go1/utils/packet"
 
 )
 
@@ -20,6 +20,7 @@ func main() {
 
 	// fmt.Println("Unsigned value of ", a, "is", utils.Unsigned(z))
 
+//  --------------------------Unsigned pgm-----------------------------------------------
 	
 
 	// var s *utils.Stack = new(utils.Stack)
@@ -37,8 +38,19 @@ func main() {
 	// 	fmt.Println("Popped element",s.Pop())
 	// }
 
-	a := packet.Packet12(23)
-	fmt.Println(a)
+	//  --------------------------stack pgm-----------------------------------------------
+
+
+	// var a packet.Root
+	// a.Insert(10)
+	// a.Insert(5)
+	// a.Insert(17)
+	// a.Insert(3)
+	// a.Insert(7)
+	// packet.InorderTraversal(a.Root)
+
+	//  --------------------------Binary tree pgm-----------------------------------------------
+
 
 
 
