@@ -51,3 +51,19 @@ func InorderTraversal(node *Bst) {
 
 	}
 }
+
+func PreorderTraversal(node *Bst) {
+	if node != nil {
+		fmt.Println(node.Data, " ")
+		PreorderTraversal(node.Left)
+		PreorderTraversal(node.Right)
+	}
+}
+
+func PostOrderTraversal(node *Bst) {
+	if node != nil {
+		PostOrderTraversal(node.Left)
+		PostOrderTraversal(node.Right)
+		fmt.Println(node.Data, " ")
+	}
+}
